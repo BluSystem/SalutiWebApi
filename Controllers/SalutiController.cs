@@ -25,7 +25,7 @@ namespace SalutiWebApi.Controllers
         public ActionResult<InfoMsg> getSaluti2(string Nome)
         {
             string hostName = Environment.MachineName;
-            return Ok(new InfoMsg(DateTime.Today, $"Saluti {Nome}, sono la tua web api aggiornata alla versione 1.1 in Azure App Services nella VM " + hostName + ", deploy con VS2019"));
+            return Ok(new InfoMsg(DateTime.Today, $"Saluti {Nome}, sono la tua web api aggiornata alla versione 1.1 in Azure App Services nella VM " + hostName + ", deploy con VS2019 e aggiornata con GitHub"));
         }
 
         [HttpGet("{Nome}/{version}")]
@@ -33,7 +33,7 @@ namespace SalutiWebApi.Controllers
         public ActionResult<InfoMsg> getSaluti3(string Nome, string version)
         {
             string hostName = Environment.MachineName;
-            return Ok(new InfoMsg(DateTime.Today, $"Saluti {Nome}, sono la versione " + version + " in Azure App Services nella VM " + hostName + ", deploy con VS2019 su di uno slot di produzione"));
+            return Ok(new InfoMsg(DateTime.Today, $"Saluti {Nome}, sono la versione " + version + " in Azure App Services nella VM " + hostName + ", deploy con VS2019 su di uno slot di produzione  aggiornata con GitHub"));
         }
     }
 }
