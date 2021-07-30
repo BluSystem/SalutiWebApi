@@ -33,7 +33,7 @@ namespace SalutiWebApi.Controllers
         public ActionResult<InfoMsg> getSaluti3(string Nome, string version)
         {
             string hostName = Environment.MachineName;
-            return Ok(new InfoMsg(DateTime.Today, $"Saluti {Nome}, sono la versione " + version + " in Azure App Services nella VM " + hostName + ", deploy con VS2019 su di uno slot di produzione  aggiornata con GitHub"));
+            return Ok(new InfoMsg(DateTime.Today, $"Saluti {Nome}, sono la versione " + version + " in Azure App Services nella VM " + hostName + ", deploy con VS2019 su di uno slot di produzione aggiornata con GitHub"));
         }
     }
 }
